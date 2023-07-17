@@ -1,0 +1,90 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="square.css" />
+</head>
+<html>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p style="color: black;">Check out some of the things I can do with JavaScript!</p>
+    <div class="flex-container">
+        <div>
+            <p>Check out my Github!</p>
+            <button value="My Github" class="btn btn-primary" onclick="openGithub()">My Github</button>
+        </div>
+
+        <div>
+            <p id="demo">Who is my favorite baseball team?</p>
+            <button class="btn btn-primary" onclick="myFunction()">and the answer is...</button>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div>
+            <h2>Square root of a number</h2>
+            <form id="inform">Enter a number between 1 to 10: <br />
+                <input type="number" id="textin" min="1" max="10" />
+            </form>
+        <br />
+             <button class="btn btn-primary" onclick="findSquare(inform)">Square Root</button>
+        <br /> <br />
+            The square of your number is: <br />
+            <p id="textout"></p>
+        </div>
+
+        <div>
+            <h2>Water State</h2>
+            <form id="inform1">Enter water temp: <br />
+                <input type="text" id="theWaterTemp" min="0" max="300" />
+            </form>
+        <br />
+            <button class="btn btn-danger" onclick="findWaterState(inform1)">The water is...</button>
+        <br />
+        <br />
+            The water is: 
+            <p id="water"></p>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div>
+            <h2>Multiply Demo</h2>
+            <form id="thisform">
+                Enter a number to multiply <br />
+                <input type="number" id="numberin" min="0" max="5000" />
+            </form>
+        <br />
+            <button class="btn btn-primary" onclick="multiplyFunction(thisform)">Multiply number</button>
+        <br /> <br />
+            The square of your number is: <br />
+            <p id="numberout"></p>
+        </div>
+
+        <div>
+            <h2>Fahrenheit to celsius</h2>
+            <form id="temp">
+                Fahrenheit temperature:<br/>
+                <input type="number" id="ftemp" min="0" max="200" value="50"/>
+            </form>
+        <br/>
+            <button class="btn btn-danger" onclick="changeTemp(temp)">F to C</button>
+        <br/><br/>
+            Celsius temperature:<br/>
+            <p id="ctemp"></p>
+        </div>
+    </div>
+
+<script src=square.js>
+    
+</script>
+</div>
+</body>
+</html>
+
+
+
