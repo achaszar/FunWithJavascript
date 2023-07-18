@@ -30,13 +30,13 @@ function findWaterState(waterTemp) {
     var freezeTemp = 32;
     var result;
     if (inputText >= boilTemp) {
-        result = "Steam";
+        result = "Steaming";
     }
     else if (inputText <= freezeTemp) {
         result = "Ice";
     }
     else {
-        result = "Liquid Water";
+        result = "Liquid";
     }
     document.getElementById("water").innerHTML = result;
 }
