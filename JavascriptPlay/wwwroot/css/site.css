@@ -49,10 +49,31 @@ p {
 }
 
 .flex-container > div {
-        background-color: #f1f1f1;
-        width: 40%;
-        margin: 5%;
-        text-align: center;
-        line-height: 50px;
-        font-size: 15px;
+    background-color: #f1f1f1;
+    width: 40%;
+    margin: 5%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.baseballessay {
+    margin:10px; 
+    padding:10px;
+}
+
+.baberuth {
+    width: 410px;
+    height: 300px;
+    float: left;
+    border: solid;
+    margin: 8px;
+}
+
+.baseballfield {
+    width: 400px; 
+    height: 250px;
+    float: right; 
+    border: solid;
+    margin: 8px;
 }
